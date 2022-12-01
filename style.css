@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+   box-sizing: border-box; 
+}
+header{
+  width: 100vw;
+  height: 100vh;
+}
+header .navbar-toggler{
+  z-index: 3;
+}
+.headimg img{
+  object-fit: cover;
+}
+.container-fluid .logo{
+font-size: 12px;
+}
+.intro .card-title{
+  font-size: 25px;
+}
+.intro .card-title span{
+  font-size: 20px;
+  font-weight: 400;
+}
+.headcontent {
+  overflow: hidden;
+}
+.headcontent  ul li{
+  list-style: none;
+  display:inline-block;
+}.headcontent ul li a{
+  color: black;
+}
+.headcontent ul{
+  left: -20px;
+  bottom: -10px;
+}
+#navbarcontent{
+  position: absolute;
+  width: 300px;
+  height: 90%;
+  top: 10%;
+  transition: .5s;
+  background-color: black;
+  right: -100%;
+  position: fixed;
+  z-index: 3;
+}
+.toggleadd{
+right:0% !important;
+}
+#navbarcontent ul li{
+  margin-top: 20px;
+}
+#navbarcontent ul li a{
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+#navbarcontent ul li a:hover{
+  background-color: whitesmoke;
+  color: black;
+  transition: .3s;
+}
+#about .box-1{
+  margin-top: 50px !important;
+}
+#about .box-1 p {
+ border-bottom: 2px solid white;
+}
+#about #aboutImg{
+  min-height: 400px;
+  background: url(jpg/person-5843476_640.jpg);
+}
+#services .text-info{
+  border-bottom: 2px solid black;
+}
+#services .card{
+  background: rgb(240, 240, 240);
+}#services .card i{
+  font-size: 30px;
+  margin-top: 15px;
+}
+#services .card:hover{
+  background: rgb(41, 41, 41);
+  color: whitesmoke;
+  transition: .5s;
+}
+#resentWork .col-lg-3{
+height: 220px;
+position: relative;
+overflow: hidden;
+}#resentWork  img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+#resentWork h4{
+  display: inline-block;
+  border-bottom: 2px solid rgb(15, 0, 0);
+}
+#resentWork .col-lg-3 .project{
+  position: absolute;
+  top: 100%;
+  background-color: rgba(0, 0, 0, 0.534);
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  line-height: 220px;
+  font-size: 25px;
+  transition: .3s;
+  text-align: center;
+}
+#resentWork .col-lg-3:hover .project{
+  top: 0%;
+}
+#contactUs h4{
+  display: inline-block;
+  border-bottom: 2px solid whitesmoke;
+}
