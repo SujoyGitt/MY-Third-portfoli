@@ -15,8 +15,8 @@
   </head>
 
   <body>
-    <header class="col-12 d-flex">
-      <div class="headimg col-5 h-100 d-sm-block d-none">
+    <header class="col-12 d-flex" id="home">
+      <div class="headimg col-5 d-sm-block d-none">
         <img
           src="jpg/blackshirt man.jpg"
           alt=""
@@ -38,14 +38,12 @@
             </button>
           </div>
         </nav>
-        <div class="col-12 intro mt-5">
+        <div class="col-12 intro mt-5 homeContent">
           <div class="card-body">
             <div class="d-flex flex-column">
-              <p class="card-title text-info fw-bold">
-                Hello,<span class="text-dark">Im</span>
-              </p>
+              <p class="card-title text-info fw-bold">Hello,<span>Im</span></p>
               <h1 class="text-uppercase fs-1">Sujoy Ghosal</h1>
-              <span class="text-black-50 fw-normal text-capitalize"
+              <span class="fw-normal text-capitalize"
                 >Im a front end web devoloper</span
               >
               <p class="mt-3">
@@ -74,8 +72,11 @@
             <a href="www.instragram.com"><i class="fab fa-instagram"></i></a>
           </li>
         </ul>
-        <div class="text-black" id="navbarcontent">
+        <div class="" id="navbarcontent">
           <ul class="navbar-nav ms-5 mt-5">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
             <li class="nav-item">
               <a href="#about" class="nav-link active">About us</a>
             </li>
@@ -221,7 +222,7 @@
                 illo id.
               </p>
             </div>
-            <div class="col-sm-6 col-12" id="aboutImg"></div>
+            <div class="col-sm-6 col-12 d-none d-sm-block" id="aboutImg"></div>
           </div>
         </div>
       </div>
@@ -238,7 +239,7 @@
         </div>
         <div class="col-12">
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4 g-0">
               <img
                 src="jpg/Avengers_Tower-chi-ha-comprato-min.jpg"
                 alt=""
@@ -246,27 +247,27 @@
               />
               <div class="project"><p>Project 1</p></div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4 g-0">
               <img src="jpg/boys are tuni light.jpg" alt="" class="img-fluid" />
               <div class="project"><p>Project 2</p></div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4 g-0">
               <img src="jpg/food5.jpg" alt="" class="img-fluid" />
               <div class="project"><p>Project 3</p></div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4 g-0">
               <img src="jpg/food6.jpg" alt="" class="img-fluid" />
               <div class="project"><p>Project 4</p></div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4 g-0">
               <img src="jpg/images.jpg" alt="" class="img-fluid" />
               <div class="project"><p>Project 5</p></div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4 g-0">
               <img src="jpg/person-5843476_640.jpg" alt="" class="img-fluid" />
               <div class="project"><p>Project 6</p></div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4 g-0">
               <img
                 src="jpg/pexels-suvan-chowdhury-144429.jpg"
                 alt=""
@@ -274,7 +275,7 @@
               />
               <div class="project"><p>Project 7</p></div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-10 mt-4 g-0">
               <img
                 src="jpg/pexels-steve-johnson-1269968.jpg"
                 alt=""
@@ -302,26 +303,50 @@
               <form action="" class="text-center">
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
-                    <input  type="text"  class="form-control col-sm-12"  placeholder="Frist name"/>
+                    <input
+                      type="text"
+                      class="form-control col-sm-12"
+                      placeholder="Frist name"
+                    />
                   </div>
                   <div class="col-sm-12 col-md-6 mt-4 mt-md-0">
-                    <input  type="text"  class="form-control"  placeholder="Last name"/>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last name"
+                    />
                   </div>
                 </div>
                 <div class="row mt-4">
                   <div class="col-sm-12 col-md-6">
-                    <input  type="email"  class="form-control"  placeholder="email"/>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="email"
+                    />
                   </div>
                   <div class="col-sm-12 col-md-6 mt-4 mt-md-0">
-                    <input  type="password"  class="form-control"  placeholder="password"/>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="password"
+                    />
                   </div>
                 </div>
                 <div class="row mt-4">
                   <div class="col-12">
-                    <textarea name="" id="" class="form-control" rows="3" placeholder="Message"></textarea>
+                    <textarea
+                      name=""
+                      id=""
+                      class="form-control"
+                      rows="3"
+                      placeholder="Message"
+                    ></textarea>
                   </div>
-                </div>         
-                 <button class="btn btn-info text-white d-inline-block m-4 px-5">Send</button>
+                </div>
+                <button class="btn btn-info text-white d-inline-block m-4 px-5">
+                  Send
+                </button>
               </form>
             </div>
           </div>
